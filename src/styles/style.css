@@ -1,4 +1,116 @@
 *{
     padding: 0px;
     margin:0px;
+    font-family: sans-serif;
 }
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+}
+/* Estilos generales de estructura del sitio */
+.header-container{
+    width: 80%;
+    height: 150px;
+    /* background-color: skyblue; */
+    float: right;
+}
+.menu-container{
+    width: 20%;
+    height: 100vh;
+    background-color: slategray;
+    float: left;
+}
+.video-list-container{
+    width: 80%;
+    height: 200vh;
+    background-color: snow;
+    float: right;
+    overflow:auto;
+}
+/* Fin de los estilos generales */
+/* Estilos del header */
+.header-top{
+    width: 100%;
+    height: 75px;
+    overflow:hidden;
+    border-bottom: 2px solid rgba(179, 167, 167, 0.432);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.yt-logo{
+    width: 180px;
+}
+.yt-logo img{
+    width: 50%;
+}
+.form-search{
+    width: 50%;
+}
+.form-search form{
+    display: flex;
+}
+.form-search input[type="search"]{
+    width: 75%;
+    height: 40px;
+    border: 1px solid rgb(180, 167, 167);
+    padding-left: 5px;
+}
+.form-search input[type="search"]:focus{
+    outline: none;
+}
+.form-search button{
+    width: 70px;
+    cursor: pointer;
+}
+.form-search button i{
+    font-size: 20px;
+}
+.yt-op{
+    width: 30% ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.microphone-container, .yt-app, .settings-container {
+    width: 50px;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+.microphone-container i , .yt-app i , .settings-container{
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-login{
+    width: 120px;
+
+}
+.btn-login button{
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid rgb(43, 57, 248);
+    background-color: white;
+    color: rgb(43, 57, 248);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-down{
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-down .recommended{
+    background-color: rgba(214, 214, 214, 0.445);
+    padding: 10px;
+    border-radius: 20px;
+    /* border-end-start-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}
+/* Fin de los estilos del header */
