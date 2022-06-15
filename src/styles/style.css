@@ -24,7 +24,7 @@
     border-right: 1px solid rgba(136, 135, 130, 0.521);
 }
 .video-list-container{
-    width: 80%;
+    width: 75%;
     height: 200vh;
     background-color: snow;
     float: right;
@@ -149,3 +149,65 @@
     text-decoration: none;
 }
 /* FIn de menu lateral */
+/* Estilos del los videos yt */
+.video-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.video-container{
+    width: 350px;
+    height: 300px;
+    /* background-color: red; */
+    overflow:hidden;
+    cursor: pointer;
+
+}
+.video-thumbnail{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.video-thumbnail img{
+    width: 100%;
+}
+.video-description{
+    width: 100%;
+    /* background-color: purple; */
+    display: grid;
+    grid-template-areas: "img title"
+                        "img channel"
+                        "img views"
+    ;
+    grid-template-columns: 50px auto ;
+    grid-template-rows: 50px 20px 20px;
+}
+.video-img-channel{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    grid-area: img;
+}
+.video-img-channel img{
+    width: 100%;
+    /* height: 100%; */
+} 
+.video-thumbnail img:hover{
+    filter: brightness(.5);
+}
+.video-channel{
+    grid-area: channel;
+    margin-left: 10px;
+
+}
+.video-title{
+    font-weight: bold;
+    margin-left: 10px;
+    grid-area: title;
+}
+.video-views{
+    grid-area: views;
+    margin-left: 10px;
+}
+/* Fin de los estilos */
