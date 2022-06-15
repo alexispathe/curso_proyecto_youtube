@@ -11,7 +11,7 @@
 /* Estilos generales de estructura del sitio */
 .header-container{
     width: 100%;
-    height: 150px;
+    height: 80px;
     /* background-color: skyblue; */
     /* float: right; */
     text-align: center;
@@ -21,12 +21,12 @@
     height: 100vh;
     /* background-color: slategray; */
     float: left;
-    border-right: 1px solid rgba(136, 135, 130, 0.521);
+    /* border-right: 1px solid rgba(136, 135, 130, 0.521); */
 }
 .video-list-container{
-    width: 75%;
+    width: 80%;
     height: 200vh;
-    background-color: snow;
+    background-color:rgba(245, 243, 243, 0.493);
     float: right;
     overflow:auto;
 }
@@ -40,6 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 .yt-logo{
     width: 180px;
@@ -54,7 +55,7 @@
     display: flex;
 }
 .form-search input[type="search"]{
-    width: 75%;
+    width: 100%;
     height: 40px;
     border: 1px solid rgb(180, 167, 167);
     padding-left: 5px;
@@ -101,9 +102,11 @@
 
 .header-down{
     display: flex;
-    height: 75px;
+    height: 40px;
     justify-content: space-between;
     align-items: center;
+    padding:10px;
+    background-color: white;
 
 }
 .header-down .recommended{
@@ -154,6 +157,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 10px;
+
 }
 .video-container{
     width: 350px;
